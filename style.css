@@ -20,6 +20,11 @@ body{
     height: auto;
 }
 
+.mediacard img{
+    min-width: 450px;
+    height: 260px; 
+}
+
 .topcard{
     padding: 20px;
     padding-top: 0px;
