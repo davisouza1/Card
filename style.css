@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Passion One", sans-serif;
+    width: 100vw;
+    height: 90vh;
 }
 
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    margin-top: 60px;
+    min-width: 400px;
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: white;
     box-shadow: 0px 1px 6px 0px blueviolet;
     border-radius: 20px;
-    width: auto;
-    height: auto;
 }
 
 .mediacard img{
-    min-width: 450px;
-    height: 260px; 
+    height: 260px;
+    max-width: 360px; 
 }
 
 .topcard{
@@ -31,6 +40,10 @@ body{
 }
 
 .title{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: blueviolet;
     font-size: 2em;
 }
@@ -40,14 +53,21 @@ body{
 }
 
 .bottomcard{
-   padding: 20px;
+    padding: 10px;
 }
 
 .bottomtext{
+    padding: 10px;
     color: rgb(85, 32, 135);
 }
 
+.actioncard{
+    display: flex;
+    gap: 20px;
+}
+
 .actions{
+    margin: 10px 0px 10px 0px;
     background: none;
     border: none;
     color: rgb(164, 81, 241);
@@ -56,4 +76,5 @@ body{
 
 .actions:hover{
     color:palevioletred;
+    cursor: pointer;
 }
